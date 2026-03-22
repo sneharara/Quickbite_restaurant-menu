@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 const ACCENT = "#FF6B35"; const AMBER = "#F7931E"
-const LANDING_URL = "http://localhost:5173"
+const LANDING_URL = "https://quickbite-restaurant-menu.vercel.app"
 export default function QRPage() {
   const [qrUrl, setQrUrl] = useState("")
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function QRPage() {
           <span style={{ background:"#1a1a1a", border:`1px solid ${ACCENT}`, color:ACCENT, borderRadius:10, padding:"6px 16px", fontSize:13, fontWeight:600 }}>Admin</span>
         </div>
       </div>
-      <p style={{ color:"#555", fontSize:12, marginBottom:16 }}>URL: {LANDING_URL}</p>
+      <p style={{ color:"#555", fontSize:12, marginBottom:16 }}>Scan with your phone camera</p>
       <button style={{ background:`linear-gradient(135deg,${ACCENT},${AMBER})`, border:"none", borderRadius:12, padding:"12px 28px", color:"#fff", fontSize:14, fontWeight:600, cursor:"pointer" }} onClick={() => window.print()}>
         Print QR Code
       </button>
